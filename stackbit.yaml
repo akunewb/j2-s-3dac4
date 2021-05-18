@@ -1,0 +1,410 @@
+stackbitVersion: ~0.3.0
+ssgName: jekyll
+publishDir: _site
+dataDir: _data
+pagesDir: ''
+models:
+  post:
+    type: page
+    label: Post
+    folder: _posts
+    match: '*'
+    exclude:
+      - 2017-07-27-welcome.md
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: current
+        label: Current
+      - type: image
+        name: cover
+        label: Cover
+      - type: boolean
+        name: navigation
+        label: Navigation
+      - type: string
+        name: title
+        label: Title
+      - type: datetime
+        name: date
+        label: Date
+      - type: string
+        name: tags
+        label: Tags
+      - type: string
+        name: class
+        label: Class
+      - type: string
+        name: subclass
+        label: Subclass
+      - type: string
+        name: author
+        label: Author
+      - type: image
+        name: logo
+        label: Logo
+  post_1:
+    type: page
+    label: Post 1
+    folder: _posts
+    match:
+      - 2017-07-27-welcome.md
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: current
+        label: Current
+      - type: image
+        name: cover
+        label: Cover
+      - type: boolean
+        name: navigation
+        label: Navigation
+      - type: string
+        name: title
+        label: Title
+      - type: datetime
+        name: date
+        label: Date
+      - type: list
+        name: tags
+        label: Tags
+        items:
+          type: string
+      - type: string
+        name: class
+        label: Class
+      - type: string
+        name: subclass
+        label: Subclass
+      - type: string
+        name: author
+        label: Author
+  about:
+    type: page
+    label: About
+    folder: about
+    match: '*'
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: current
+        label: Current
+      - type: string
+        name: title
+        label: Title
+      - type: boolean
+        name: navigation
+        label: Navigation
+      - type: image
+        name: logo
+        label: Logo
+      - type: string
+        name: class
+        label: Class
+      - type: string
+        name: subclass
+        label: Subclass
+  authors:
+    type: data
+    label: Authors
+    file: authors.yml
+    fields:
+      - type: object
+        name: ghost
+        label: Ghost
+        fields:
+          - type: string
+            name: username
+            label: Username
+          - type: string
+            name: name
+            label: Name
+          - type: string
+            name: url_full
+            label: Url Full
+          - type: string
+            name: url
+            label: Url
+          - type: string
+            name: bio
+            label: Bio
+          - type: image
+            name: picture
+            label: Picture
+          - type: string
+            name: facebook
+            label: Facebook
+          - type: string
+            name: twitter
+            label: Twitter
+          - type: boolean
+            name: cover
+            label: Cover
+      - type: object
+        name: hannah
+        label: Hannah
+        fields:
+          - type: string
+            name: username
+            label: Username
+          - type: string
+            name: name
+            label: Name
+          - type: string
+            name: location
+            label: Location
+          - type: string
+            name: url_full
+            label: Url Full
+          - type: string
+            name: url
+            label: Url
+          - type: string
+            name: bio
+            label: Bio
+          - type: image
+            name: picture
+            label: Picture
+          - type: boolean
+            name: facebook
+            label: Facebook
+          - type: string
+            name: twitter
+            label: Twitter
+          - type: image
+            name: cover
+            label: Cover
+      - type: object
+        name: john
+        label: John
+        fields:
+          - type: string
+            name: username
+            label: Username
+          - type: string
+            name: name
+            label: Name
+          - type: string
+            name: location
+            label: Location
+          - type: string
+            name: url_full
+            label: Url Full
+          - type: string
+            name: url
+            label: Url
+          - type: string
+            name: bio
+            label: Bio
+          - type: image
+            name: picture
+            label: Picture
+          - type: boolean
+            name: facebook
+            label: Facebook
+          - type: boolean
+            name: twitter
+            label: Twitter
+          - type: boolean
+            name: cover
+            label: Cover
+      - type: object
+        name: lewis
+        label: Lewis
+        fields:
+          - type: string
+            name: username
+            label: Username
+          - type: string
+            name: name
+            label: Name
+          - type: string
+            name: location
+            label: Location
+          - type: boolean
+            name: url_full
+            label: Url Full
+          - type: boolean
+            name: url
+            label: Url
+          - type: string
+            name: bio
+            label: Bio
+          - type: image
+            name: picture
+            label: Picture
+          - type: boolean
+            name: facebook
+            label: Facebook
+          - type: boolean
+            name: twitter
+            label: Twitter
+          - type: boolean
+            name: cover
+            label: Cover
+      - type: object
+        name: abraham
+        label: Abraham
+        fields:
+          - type: string
+            name: username
+            label: Username
+          - type: string
+            name: name
+            label: Name
+          - type: string
+            name: location
+            label: Location
+          - type: boolean
+            name: url_full
+            label: Url Full
+          - type: boolean
+            name: url
+            label: Url
+          - type: string
+            name: bio
+            label: Bio
+          - type: image
+            name: picture
+            label: Picture
+          - type: boolean
+            name: facebook
+            label: Facebook
+          - type: boolean
+            name: twitter
+            label: Twitter
+          - type: boolean
+            name: cover
+            label: Cover
+      - type: object
+        name: edgar
+        label: Edgar
+        fields:
+          - type: string
+            name: username
+            label: Username
+          - type: string
+            name: name
+            label: Name
+          - type: string
+            name: location
+            label: Location
+          - type: boolean
+            name: url_full
+            label: Url Full
+          - type: boolean
+            name: url
+            label: Url
+          - type: string
+            name: bio
+            label: Bio
+          - type: string
+            name: picture
+            label: Picture
+          - type: boolean
+            name: facebook
+            label: Facebook
+          - type: boolean
+            name: twitter
+            label: Twitter
+          - type: boolean
+            name: cover
+            label: Cover
+      - type: object
+        name: martin
+        label: Martin
+        fields:
+          - type: string
+            name: username
+            label: Username
+          - type: string
+            name: name
+            label: Name
+          - type: string
+            name: location
+            label: Location
+          - type: boolean
+            name: url_full
+            label: Url Full
+          - type: boolean
+            name: url
+            label: Url
+          - type: string
+            name: bio
+            label: Bio
+          - type: image
+            name: picture
+            label: Picture
+          - type: boolean
+            name: facebook
+            label: Facebook
+          - type: boolean
+            name: twitter
+            label: Twitter
+          - type: boolean
+            name: cover
+            label: Cover
+  tags:
+    type: data
+    label: Tags
+    file: tags.yml
+    fields:
+      - type: object
+        name: speeches
+        label: Speeches
+        fields:
+          - type: string
+            name: name
+            label: Name
+          - type: string
+            name: description
+            label: Description
+          - type: image
+            name: cover
+            label: Cover
+      - type: object
+        name: fiction
+        label: Fiction
+        fields:
+          - type: string
+            name: name
+            label: Name
+          - type: boolean
+            name: description
+            label: Description
+          - type: boolean
+            name: cover
+            label: Cover
+      - type: object
+        name: fables
+        label: Fables
+        fields:
+          - type: string
+            name: name
+            label: Name
+          - type: string
+            name: description
+            label: Description
+          - type: image
+            name: cover
+            label: Cover
+      - type: object
+        name: getting-started
+        label: Getting Started
+        fields:
+          - type: string
+            name: name
+            label: Name
+          - type: boolean
+            name: description
+            label: Description
+          - type: boolean
+            name: cover
+            label: Cover
